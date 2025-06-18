@@ -1,0 +1,14 @@
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\bin\Debug\net8.0\GraphBFS.exe
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\bin\Debug\net8.0\GraphBFS.deps.json
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\bin\Debug\net8.0\GraphBFS.runtimeconfig.json
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\bin\Debug\net8.0\GraphBFS.dll
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\bin\Debug\net8.0\GraphBFS.pdb
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.AssemblyInfoInputs.cache
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.AssemblyInfo.cs
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.csproj.CoreCompileInputs.cache
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.dll
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\refint\GraphBFS.dll
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.pdb
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\GraphBFS.genruntimeconfig.cache
+C:\Users\pverma1\source\repos\GraphDFS\GraphBFS\obj\Debug\net8.0\ref\GraphBFS.dll
