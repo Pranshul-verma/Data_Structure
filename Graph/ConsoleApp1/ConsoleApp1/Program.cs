@@ -17,5 +17,14 @@ var v = new List<(string, string)>()
 };
 g.Addedge(v);
 g.DFS("A");
-g.BFS("A");
+g.BFS("A","E");
+FindShortest_CheapestFlight obj = new FindShortest_CheapestFlight();
+var flights = new List<(string, string, int)>
+{
+    ("A", "B", 100),
+    ("B", "C", 100),
+    ("A", "C", 500)
+};
+obj.AddFlightRouteandFair(flights);
+obj.findShortestandCheapestPath("A", "C");
 Console.ReadLine();

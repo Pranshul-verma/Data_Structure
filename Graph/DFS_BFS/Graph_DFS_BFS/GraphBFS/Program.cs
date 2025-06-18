@@ -15,7 +15,7 @@ var edges = new List<(string, string)>
 obj.Edges(edges);
 
 obj.BFS("A");
-obj.shortedPathOfFlight("A", "D");
+obj.shortedPathOfFlight("A", "C");
 Console.ReadLine();
 
 

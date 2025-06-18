@@ -56,28 +56,39 @@ namespace ConsoleApp1
             }
         }
 
-        public void BFS(string start)
+        public void BFS(string start, string destination)
         {
-            Queue<string> queue = new Queue<string>();
-            HashSet<string> visited = new HashSet<string>();
-            queue.Enqueue(start);
+            var queue = new Queue<List<string>>();
+            var visited = new HashSet<string>();
+
+            queue.Enqueue(new List<string> { start });
+            visited.Add(start);
+
             while (queue.Count > 0)
             {
-                var node = queue.Dequeue();
+                var path = queue.Dequeue();
+                string last = path.Last();
 
-
-                visited.Add(node);
-                Console.WriteLine("travel node are " + node);
-
-                foreach (var neighbours in GraphEdge[node])
+                if (last == destination)
                 {
-                    if (!visited.Contains(neighbours))
+                    Console.WriteLine("Shortest path: " + string.Join(" -> ", path));
+                    Console.WriteLine("Number of edges: " + (path.Count - 1));
+                    return;
+                }
+
+                foreach (var neighbor in GraphEdge[last])
+                {
+                    if (!visited.Contains(neighbor))
                     {
-                        visited.Add(neighbours);
-                        queue.Enqueue(neighbours);
+                        visited.Add(neighbor);
+                        var newPath = new List<string>(path) { neighbor };
+                        queue.Enqueue(newPath);
                     }
                 }
             }
+
+            Console.WriteLine("No path found.");
         }
+
     }
 }
