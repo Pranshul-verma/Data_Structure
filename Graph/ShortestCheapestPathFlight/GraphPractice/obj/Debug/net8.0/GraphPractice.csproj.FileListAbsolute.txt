@@ -1,0 +1,14 @@
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.AssemblyInfoInputs.cache
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.AssemblyInfo.cs
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.csproj.CoreCompileInputs.cache
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\bin\Debug\net8.0\GraphPractice.exe
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\bin\Debug\net8.0\GraphPractice.deps.json
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\bin\Debug\net8.0\GraphPractice.runtimeconfig.json
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\bin\Debug\net8.0\GraphPractice.dll
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\bin\Debug\net8.0\GraphPractice.pdb
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.dll
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\refint\GraphPractice.dll
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.pdb
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\GraphPractice.genruntimeconfig.cache
+C:\Users\pverma1\source\repos\GraphPractice\GraphPractice\obj\Debug\net8.0\ref\GraphPractice.dll
