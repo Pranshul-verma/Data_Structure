@@ -140,11 +140,11 @@ namespace GraphPractice
             var VisitedHashset = new HashSet<List<string>>();
             foreach (var (from, to, price) in flightRouteWithPrice)
             {
-                if (!graphEdges.ContainsKey(from))
+                //if (!graphEdges.ContainsKey(from))
                 {
                     graphEdges[from] = new List<(string, int)>();
                 }
-                if (!graphEdges.ContainsKey(to))
+                //if (!graphEdges.ContainsKey(to))
                 {
                     graphEdges[to] = new List<(string, int)>();
                 }
