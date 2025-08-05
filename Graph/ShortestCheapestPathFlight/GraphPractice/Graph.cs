@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -129,13 +130,14 @@ namespace GraphPractice
         /// <param name="flightRouteWithPrice"></param>
         /// <param name="Start"></param>
         /// <param name="Desitination"></param>
-        public void FindCheapestFlightBetweenSourceAndDestination(List<(string, string, int)> flightRouteWithPrice, string Start, string Desitination)
+        public void FindCheapestFlightBetweenAndDestination(List<(string, string, int)> flightRouteWithPrice, string Start, string Desitination)
         {
             var graphEdges = new Dictionary<string, List<(string, int)>>();
             var queue = new Queue<(List<string>, int)>();
             var visited = new Dictionary<List<string>, int>();
             var shortestPath = new PriorityQueue<List<string>, int>();
             var cheapestFlight = new PriorityQueue<List<string>, int>();
+            var VisitedHashset = new HashSet<List<string>>();
             foreach (var (from, to, price) in flightRouteWithPrice)
             {
                 if (!graphEdges.ContainsKey(from))
@@ -167,9 +169,11 @@ namespace GraphPractice
                     shortestPath.Enqueue(path, path.Count());
                     cheapestFlight.Enqueue(path, node.Item2);                    
                 }
+      
+                VisitedHashset.Add((visited.Keys.SelectMany(x => x)).ToList());
                 foreach (var neighbour in graphEdges[last])
                 {
-                    if (!CheckKeyExisting(visited, neighbour))
+                    if (!visited.Keys.Any(y => y.Contains(neighbour.Item1)))
                     {
                         queue.Enqueue((new List<string>(path) { neighbour.Item1 }, node.Item2 + neighbour.Item2));
                     }
@@ -182,20 +186,7 @@ namespace GraphPractice
             List<string> flightPath = new List<string>();
             cheapestFlight.TryDequeue(out flightPath, out cost);
             Console.WriteLine("Cheapest flight path will be " + string.Join("->", flightPath) + " and it will cost " + cost);
-        }
-
-        private bool CheckKeyExisting(Dictionary<List<string>, int> visited, (string, int) neighbour)
-        {
-            foreach (var item in visited.Keys)
-            {
-                if (item.Contains(neighbour.Item1))
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
+        }              
     }
 }
 
