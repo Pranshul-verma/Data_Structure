@@ -33,7 +33,7 @@ var graphedges = new List<(string, string, int)>() {
 ("B", "C",100),
 ("A","C",500)
 };
-g.FindCheapestFlightBetweenSourceAndDestination(graphedges,"A", "C");
+g.FindCheapestFlightBetweenAndDestination(graphedges,"A", "C");
 // A--B
 // |
 // |
