@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Xml.Linq;
 
 namespace GraphPractice
 {
-    internal class Graph
+    public class Graph
     {
         Dictionary<string, List<String>> Edges;
         HashSet<string> Visited;
@@ -23,7 +23,7 @@ namespace GraphPractice
 
         }
 
-        internal void AddEdgesOfGraph(List<(string, string)> edges)
+        public void AddEdgesOfGraph(List<(string, string)> edges)
         {
             foreach (var (from, to) in edges)
             {
